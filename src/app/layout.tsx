@@ -39,8 +39,8 @@ export default function RootLayout({
       <body
         className={`${futura.variable} ${helveticaFont.variable} bg-[url("/desktop_bg.jpg")] bg-cover bg-no-repeat`}
       >
-        <main className="px-[55px] max-lg:px-[20px] pt-[50px] max-lg:pt-[20px] min-h-[100dvh] flex flex-col">
-          <div className="grid grid-cols-[1fr,1.2fr] max-lg:flex max-lg:flex-col max-lg:gap-[40px] gap-[140px] flex-grow">
+        <main className="flex min-h-[100dvh] flex-col px-[55px] pt-[50px] max-lg:px-[20px] max-lg:pt-[20px]">
+          <div className="grid flex-grow grid-cols-[1fr,1.2fr] gap-[140px] max-lg:flex max-lg:flex-col max-lg:gap-[40px]">
             <div className="flex flex-col max-lg:items-center max-lg:gap-[24px]">
               <Image
                 src="/logo1.png"
@@ -60,7 +60,7 @@ export default function RootLayout({
             </div>
             {children}
           </div>
-          <footer className="flex py-[34px] max-sm:py-[17px] max-lg:mt-[25px] mt-auto justify-between items-center font-futura text-[25.83px] max-sm:text-[12px] tracking-[-1.291px] max-sm:tracking-[-0.6px]">
+          <footer className="mt-auto flex items-center justify-between py-[34px] font-futura text-[25.83px] tracking-[-1.291px] max-lg:mt-[25px] max-sm:py-[17px] max-sm:text-[12px] max-sm:tracking-[-0.6px]">
             <span>HOME OF FOOTBALL</span>
             <span>MAD BRILLIANCE TRIAL</span>
           </footer>

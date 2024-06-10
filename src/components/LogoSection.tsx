@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 export default function LogoSection() {
   const pathName = usePathname() as "/touch" | "/speed" | "/precision";
   return (
-    <div className="mt-auto mb-[50px] max-lg:mt-0 max-lg:mb-0 w-full">
+    <div className="mb-[50px] mt-auto w-full max-lg:mb-0 max-lg:mt-0">
       <Option>
         {pathName === "/touch" && (
           <>
