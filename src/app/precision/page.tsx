@@ -11,7 +11,7 @@ export default async function Precision() {
   );
   const { data } = (await res.json()) as LeaderBoardResponse;
   return (
-    <main className="px-[55px] max-lg:px-[20px] pt-[50px] max-lg:pt-[20px] min-h-[100vh] flex flex-col">
+    <main className="px-[55px] max-lg:px-[20px] pt-[50px] max-lg:pt-[20px] min-h-[100dvh] flex flex-col">
       <div className="grid grid-cols-[1fr,1.2fr] max-lg:flex max-lg:flex-col max-lg:gap-[40px] gap-[140px] flex-grow">
         <div className="flex flex-col max-lg:items-center max-lg:gap-[24px]">
           <Image
