@@ -12,9 +12,22 @@ export default async function Precision() {
   const { data } = (await res.json()) as LeaderBoardResponse;
   return (
     <main className="px-[55px] max-lg:px-[20px] pt-[50px] max-lg:pt-[20px] min-h-[100vh] flex flex-col">
-      <div className="grid grid-cols-[1fr,1.2fr] max-lg:grid-cols-1 max-lg:gap-[40px] gap-[140px] flex-grow">
+      <div className="grid grid-cols-[1fr,1.2fr] max-lg:flex max-lg:flex-col max-lg:gap-[40px] gap-[140px] flex-grow">
         <div className="flex flex-col max-lg:items-center max-lg:gap-[24px]">
-          <Image src="/logo_2.png" alt="logo" width={580} height={400} />
+          <Image
+            src="/logo1.png"
+            className="max-lg:hidden"
+            alt="logo"
+            width={580}
+            height={400}
+          />
+          <Image
+            src="/logo2.png"
+            className="hidden max-lg:block"
+            alt="logo"
+            width={580}
+            height={204}
+          />
           <div className="mt-auto mb-[50px] max-lg:mt-0 max-lg:mb-0 w-full">
             <Option>
               <svg
@@ -81,7 +94,7 @@ export default async function Precision() {
             </Option>
           </div>
         </div>
-        <div className="flex flex-col max-lg:gap-[25px]">
+        <div className="flex flex-col max-lg:gap-[25px] max-lg:flex-grow">
           <div className="flex flex-col text-[20.825px] gap-[27px] max-sm:gap-[8px] leading-none font-bold max-sm:tracking-[0.12px] tracking-[0.208px] uppercase font-helvetica">
             <div className="flex items-center gap-[24px] justify-between max-sm:text-[12px]">
               <div className="flex gap-[125px] max-lg:gap-[24px] items-center">
@@ -101,13 +114,13 @@ export default async function Precision() {
               ))}
             </div>
           </div>
-          <div className="flex justify-between gap-[16px] mt-auto max-sm:mt-[0px]">
+          <div className="flex justify-between gap-[16px] mt-auto">
             <NavBtn text="PREVIOUS" link="/touch" active={true} />
             <NavBtn text="NEXT" link="/speed" active={true} />
           </div>
         </div>
       </div>
-      <footer className="flex py-[34px] max-lg:mt-[25px] mt-auto justify-between items-center font-futura text-[25.83px] max-sm:text-[12px] tracking-[-1.291px] max-sm:tracking-[-0.6px]">
+      <footer className="flex py-[34px] max-sm:py-[17px] max-lg:mt-[25px] mt-auto justify-between items-center font-futura text-[25.83px] max-sm:text-[12px] tracking-[-1.291px] max-sm:tracking-[-0.6px]">
         <span>HOME OF FOOTBALL</span>
         <span>MAD BRILLIANCE TRIAL</span>
       </footer>
